@@ -1,0 +1,16 @@
+    1  ps aux | grep kafka
+    2  clear
+    3* 
+    4  bash kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic meutopico
+    5  bash kafka-topics.sh --list --zookeeper localhost:2181
+    6  HOST_ZOOKEEPER='localhost:2181'
+    7  bash kafka-topics.sh --list --zookeeper HOST_ZOOKEEPER
+    8  bash kafka-topics.sh --list --zookeeper $HOST_ZOOKEEPER
+    9  bash kafka-console-producer.sh --broker-list localhost:9092 --topic meutopico
+   10  bash kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic meutopico --from:beginning
+   11  bash kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic meutopico --from-beginning
+   12  bash kafka-console-producer.sh --broker-list 10.3.6.25:9092  --topic meutopico
+   13  bash kafka-console-producer.sh --broker-list 10.3.6.25:9092  --topic meutopico
+   14  bash kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic meutopico --from-beginning
+   15  history
+   16  history > kafka-commands.txt
