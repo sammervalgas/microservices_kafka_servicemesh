@@ -1,0 +1,5 @@
+zuul:
+  routes:
+    ms-user: 
+      path: /api/user/**
+    ms-auth-server : /auth/**

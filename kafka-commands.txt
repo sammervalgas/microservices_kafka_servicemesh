@@ -1,6 +1,7 @@
     1  ps aux | grep kafka
     2  clear
     3* 
+
     4  bash kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic meutopico
     5  bash kafka-topics.sh --list --zookeeper localhost:2181
     6  HOST_ZOOKEEPER='localhost:2181'
@@ -14,3 +15,12 @@
    14  bash kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic meutopico --from-beginning
    15  history
    16  history > kafka-commands.txt
+
+
+EUREKA - Service Registry - Service Discovery
+
+CONFIG SERVER - Spring cloud config - Serve para armazenar diferentes ambientes
+
+ZUUL - Gateway conversa com 
+
+
